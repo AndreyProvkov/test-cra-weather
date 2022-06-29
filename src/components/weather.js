@@ -10,10 +10,10 @@ function Weather(props) {
                     <p>Sunrise: {props.sunrise}</p>
                     <p>Sunset: {props.sunset}</p>
                 </div>
-            } 
-            </div>
-        );
-    }
+            }
+            <p>{props.error}</p>
+        </div>
+    );
 }
 
 export default Weather;

@@ -40,10 +40,19 @@ class App extends React.Component {
         country: data.sys.country,
         sunrise: this.msToDate(data.sys.sunrise),
         sunset: this.msToDate(data.sys.sunset),
-        error: ''
+        error: undefined
+      });
+    } else {
+      this.setState({
+        temp: undefined,
+        city: undefined,
+        country: undefined,
+        sunrise: undefined,
+        sunset: undefined,
+        error: 'Enter city'
       });
     }
-  }
+  } 
 
   render() {
     return (
