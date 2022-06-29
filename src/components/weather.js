@@ -4,14 +4,14 @@ function Weather(props) {
     return (
         <div>
             { props.city &&
-                <div>
+                <div className='infoWeath'>
                     <p>Location: {props.city}, {props.country}</p>
                     <p>Temp: {props.temp}</p>
                     <p>Sunrise: {props.sunrise}</p>
                     <p>Sunset: {props.sunset}</p>
                 </div>
             }
-            <p>{props.error}</p>
+            <p className='error'>{props.error}</p>
         </div>
     );
 }
